@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Less CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="/css/data.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vendor.css" />
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="car-bg">
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="top-menu">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+                <div class="menu-link">
+                    <a href="http://localhost:1000">首页</a>
+                    <a href="http://localhost:1000/buy">我要买车</a>
+                    <a href="http://localhost:1000/data" style="background-color:#ECB42D; padding:24px 30px;">本月成交</a>
+                    <a href="http://localhost:1000/monthly">分期购车</a>
+                    <a href="http://localhost:1000/contact">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-pic">
+        <img src="/images/data.png" alt="">
+    </div>
+
+    <div class="page-wrapper">
+        <div class="contact-us">
+            <h2>成交<span style="color:#ECB42D">车辆</span></h2>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="section-wrapper past-deal">
+            <img src="/images/c1.jpg" alt="">
+            <img src="/images/c2.jpg" alt="">
+            <img src="/images/c3.jpg" alt="">
+            <img src="/images/c4.jpg" alt="">
+            <img src="/images/c5.jpg" alt="">
+            <img src="/images/c6.jpg" alt="">
+            <img src="/images/c7.jpg" alt="">
+            <img src="/images/c8.jpg" alt="">
+            <img src="/images/c9.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="footer">
+            <div class="footer-search">
+                <h4>搜索</h4>
+                <br>
+                <input type="text" placeholder="搜索...">
+                <i class="fas fa-search icon"></i>
+            </div>
+            <div class="footer-link">
+                <h4>我们的服务</h4>
+                <div class="footer-link-box">
+                    <div class="link-box">
+                        <img src="/images/f1.png" alt="">
+                        <h4>我要买车</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f2.png" alt="">
+                        <h4>分期购车</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f3.png" alt="">
+                        <h4>本月成交</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f4.png" alt="">
+                        <h4>联系我们</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>联系我们</h4>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/address.png" alt="">
+                    <h4>1234 E ABCDE St, El Monte, CA</h4>
+                </div>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/phone.png" alt="">
+                    <h4>(123) 456 7890</h4>
+                </div>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/email.png" alt="">
+                    <h4>abcdefg@gmail.com</h4>
+                </div>
+            </div>
+        </div>
+        <div class="hr-box">
+            <hr style="width:83%;margin:auto;">
+        </div>
+    </div>
+    <div class=" footer-copyright">
+        <div class="cr-box">
+            <h4>@ 2019 <span style="color:#ECB42D;padding-top:15px;">CarBeeCo LLC</span></h4>
+            <hr style="margin:0 20px;">
+            <h4 style="color:#ECB42D;position:relative;bottom:3px;">北美汽车直购平台</h4>
+        </div>
+    </div>
+</body>
+
+<script>
+    function service(cityName) {
+        var i;
+        var x = document.getElementsByClassName("form");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+</script>
+
+</html>

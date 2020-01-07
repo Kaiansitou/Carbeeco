@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Less CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vendor.css" />
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="car-bg">
+            <div class="bg-title">
+                <h4>怕被车行坑？怕付高差价？
+                    <br>
+                    想要原厂保修？
+                </h4>
+                <h2>
+                    找CarBeeCo就对了
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="top-menu">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+                <div class="menu-link">
+                    <a href="http://localhost:1000" style="background-color:#ECB42D; padding:24px 30px;">首页</a>
+                    <a href="http://localhost:1000/buy">我要买车</a>
+                    <a href="http://localhost:1000/data">本月成交</a>
+                    <a href="http://localhost:1000/monthly">分期购车</a>
+                    <a href="http://localhost:1000/contact">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="section-wrapper top-container">
+            <div class="top-box">
+                <div class="title">
+                    <img src="/images/mg1.png" alt="">
+                    <h4>优质车源</h4>
+                </div>
+                <br>
+                <p>4S店、Manheim拍卖行50万高分车源
+
+                    原厂保修Warranty覆盖
+
+                    CR报告 Carfax报告保证车源品质
+
+                    10年经验买手专业购车 检测排查</p>
+            </div>
+            <div class="top-box">
+                <div class="title">
+                    <img src="/images/mg2.png" alt="">
+                    <h4>透明车价</h4>
+                </div>
+                <br>
+                <p>非车行、无中间商，无校园代理
+
+                    买手直购，无抬价
+
+                    固定服务费比率，车价透明
+
+                    最低比率可达1%</p>
+            </div>
+            <div class="top-box">
+                <div class="title">
+                    <img src="/images/mg3.png" alt="">
+                    <h4>购车省心</h4>
+                </div>
+                <br>
+                <p>选车 比车 购车一站式服务
+
+                    提供学生信贷 无SSN贷款
+
+                    汽车美容 排烟检查 保险过户
+
+                    全美送车上门 领车出门</p>
+            </div>
+            <div class="top-box">
+                <div class="title">
+                    <img src="/images/mg4.png" alt="">
+                    <h4>服务保障</h4>
+                </div>
+                <br>
+                <p>10年经验专业团队
+
+                    一对一个性化服务
+
+                    24/7 售后无担忧
+
+                    全美各主要城市合作维修点</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="middle-container-title">
+            <h2>买车 卖车 <span style="color:#ECB42D">一站</span>解决</h2>
+        </div>
+    </div>
+
+    <!-- Tab Box -->
+    <div class="section-wrapper service-title">
+        <div class="st-box">
+            <button class="s-title" onclick="service('buy')">我要买车</button>
+            <hr id="line">
+        </div>
+        <div class="st-box">
+            <button class="s-title" onclick="service('sell')">我要卖车</button>
+            <hr id="line">
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="section-wrapper middle-container">
+            <div id="buy" class="form">
+                <div class="f-temp" style="display:flex;flex-wrap: wrap;">
+                    <div class="f-box">
+                        <h4>姓名</h4>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="f-box">
+                        <h4>心仪车型</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>地区</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>预算</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>联系电话</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>预计提车时间</h4>
+                        <input type="text">
+                    </div>
+                </div>
+                <div style="display:flex;flex-direction:column;padding:40px 0;">
+                    <h4>是否需要贷款</h4>
+                    <br>
+                    <div style="margin:auto;">
+                        <input id="toggle-on" name="toggle" type="radio"><label for="toggle-on">是</label>
+                        <input id="toggle-off" name="toggle" type="radio"><label for="toggle-off">否</label>
+                    </div>
+                </div>
+
+                <div class="f-temp" style="display:flex;flex-wrap: wrap;">
+                    <div class="f-box">
+                        <h4>月收入</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>可付头款金额</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>居住城市</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>邮编</h4>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div style="display:flex;flex-direction:column;padding:40px 0;">
+                    <h4>是否有SSN</h4>
+                    <br>
+                    <div style="margin:auto;">
+                        <input id="toggle-on" name="toggle" type="radio"><label for="toggle-on">是</label>
+                        <input id="toggle-off" name="toggle" type="radio"><label for="toggle-off">否</label>
+                    </div>
+                </div>
+
+                <div class="f-temp" style="display:flex;flex-wrap: wrap;">
+                    <div class="f-box">
+                        <h4>信用分数</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>信用历史时长</h4>
+                        <select>
+                            <option value="choose">选项</option>
+                            <option value="one">1-2年</option>
+                            <option value="two">2-3年</option>
+                            <option value="three">3年以上</option>
+                        </select>
+                    </div>
+                    <a href="">提交</a>
+                </div>
+            </div>
+
+            <div id="sell" class="form" style="display:none">
+                <h2 style="margin:40px 200px;">联系方式</h2>
+                <div class="f-temp" style="display:flex;flex-wrap: wrap;">
+                    <div class="f-box">
+                        <h4>姓名</h4>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="f-box">
+                        <h4>联系电话</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>地区</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>联系邮件</h4>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="f-temp" style="display:flex;flex-wrap: wrap;">
+                    <div class="f-box">
+                        <h4>月收入</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>可付头款金额</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>居住城市</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>邮编</h4>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div>
+                    <h2 style="margin:40px 200px;">车辆信息</h2>
+                </div>
+
+                <div class="f-temp" style="display:flex;flex-wrap: wrap;">
+                    <div class="f-box">
+                        <h4>品牌</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>型号</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>变速箱</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>年份</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>里程数</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>VIN</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>外部颜色</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>内部颜色</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+                        <h4>车主</h4>
+                        <input type="text">
+                    </div>
+                    <div class="f-box">
+
+                    </div>
+                    <a href="">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="section-wrapper bottom-container">
+            <div class="b-left-box">
+                <h2>CarBeeCo是谁？</h2>
+                <br>
+                <h3>专业的汽车厂商直购平台</h3>
+                <br>
+                <p>我们经验丰富的职业买手会根据您的需求为您
+                    从全网50万优质货源中筛选出性价比最高的车
+                    辆，直购于4S店、拍卖行。
+                    全程服务透明、价格透明，明码标价成本价，
+                    只收取固定比率服务费。选车比车、购车贷款、
+                    检测烟检、过户保险、汽车美容，一站式服务，
+                    您只需要领车上路。</p>
+                <br>
+                <a href="">更多</a>
+            </div>
+            <div class="b-right-box">
+                <img src="/images/car.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="footer">
+            <div class="footer-search">
+                <h4>搜索</h4>
+                <br>
+                <input type="text" placeholder="搜索...">
+                <i class="fas fa-search icon"></i>
+            </div>
+            <div class="footer-link">
+                <h4>我们的服务</h4>
+                <div class="footer-link-box">
+                    <div class="link-box">
+                        <img src="/images/f1.png" alt="">
+                        <h4>我要买车</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f2.png" alt="">
+                        <h4>分期购车</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f3.png" alt="">
+                        <h4>本月成交</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f4.png" alt="">
+                        <h4>联系我们</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>联系我们</h4>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/address.png" alt="">
+                    <h4>1234 E ABCDE St, El Monte, CA</h4>
+                </div>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/phone.png" alt="">
+                    <h4>(123) 456 7890</h4>
+                </div>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/email.png" alt="">
+                    <h4>abcdefg@gmail.com</h4>
+                </div>
+            </div>
+        </div>
+        <div class="hr-box">
+            <hr style="width:83%;margin:auto;">
+        </div>
+    </div>
+    <div class=" footer-copyright">
+        <div class="cr-box">
+            <h4>@ 2019 <span style="color:#ECB42D;padding-top:15px;">CarBeeCo LLC</span></h4>
+            <hr style="margin:0 20px;">
+            <h4 style="color:#ECB42D;position:relative;bottom:3px;">北美汽车直购平台</h4>
+        </div>
+    </div>
+</body>
+
+<script>
+    function service(cityName) {
+        var i;
+        var x = document.getElementsByClassName("form");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+</script>
+
+</html>

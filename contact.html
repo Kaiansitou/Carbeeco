@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Less CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="/css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vendor.css" />
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="car-bg">
+            <div class="bg-title">
+                <h2>关于<span style="color:#ECB42D">我们</span></h2>
+                <br>
+                <h3>CarBeeCo是北美汽车直购平台，提供从选车到售后的透明一站式服务。<br>
+                    CarBeeCo非车行,不赚差价；非私人卖车，车源优质靠谱。</h3>
+                <br><br>
+                <h4>透明成本价，只赚取固定比例手续费，低至1%。<br>
+                    透明车况，透明车源，提供CR、Carfax两份报告，质量有保证。
+                    <br>
+                    一站式服务，从选车到购车贷款及维修，24/7服务。</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="top-menu">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+                <div class="menu-link">
+                    <a href="http://localhost:1000">首页</a>
+                    <a href="http://localhost:1000/buy">我要买车</a>
+                    <a href="http://localhost:1000/data">本月成交</a>
+                    <a href="http://localhost:1000/monthly">分期购车</a>
+                    <a href="http://localhost:1000/contact"
+                        style="background-color:#ECB42D; padding:24px 30px;">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="contact-us">
+            <h2>联系<span style="color:#ECB42D">我们</span></h2>
+        </div>
+    </div>
+
+    <div class="page-wrapper contact-form">
+        <div class="left-contact-form">
+            <div class="contact-content">
+                <h3>姓名</h3>
+                <br>
+                <input type="text">
+                <h3>邮件地址</h3>
+                <br>
+                <input type="text">
+                <h3>信息</h3>
+                <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <br><br>
+                <div class="submit">
+                    <a href="">提交</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-contact-form">
+            <div class="top-info">
+                <div class="wechat">
+                    <h4>微信</h4><br>
+                    <img src="/images/scan.png" alt="">
+                </div>
+                <div class="info">
+                    <h4>邮件<br><br>abcdefg@gmail.com</h4><br>
+                    <h4>电话<br><br>(123) 456 7890</h4><br>
+                    <h4>地址<br><br>1234 E ABCDE St, El Monte, CA</h4><br>
+                </div>
+            </div>
+            <img class="map" src="/images/map.png" alt="">
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="footer">
+            <div class="footer-search">
+                <h4>搜索</h4>
+                <br>
+                <input type="text" placeholder="搜索...">
+                <i class="fas fa-search icon"></i>
+            </div>
+            <div class="footer-link">
+                <h4>我们的服务</h4>
+                <div class="footer-link-box">
+                    <div class="link-box">
+                        <img src="/images/f1.png" alt="">
+                        <h4>我要买车</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f2.png" alt="">
+                        <h4>分期购车</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f3.png" alt="">
+                        <h4>本月成交</h4>
+                    </div>
+                    <div class="link-box">
+                        <img src="/images/f4.png" alt="">
+                        <h4>联系我们</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>联系我们</h4>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/address.png" alt="">
+                    <h4>1234 E ABCDE St, El Monte, CA</h4>
+                </div>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/phone.png" alt="">
+                    <h4>(123) 456 7890</h4>
+                </div>
+                <br>
+                <div class="contact-box">
+                    <img src="/images/email.png" alt="">
+                    <h4>abcdefg@gmail.com</h4>
+                </div>
+            </div>
+        </div>
+        <div class="hr-box">
+            <hr style="width:83%;margin:auto;">
+        </div>
+    </div>
+    <div class=" footer-copyright">
+        <div class="cr-box">
+            <h4>@ 2019 <span style="color:#ECB42D;padding-top:15px;">CarBeeCo LLC</span></h4>
+            <hr style="margin:0 20px;">
+            <h4 style="color:#ECB42D;position:relative;bottom:3px;">北美汽车直购平台</h4>
+        </div>
+    </div>
+</body>
+
+<script>
+    function service(cityName) {
+        var i;
+        var x = document.getElementsByClassName("form");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+</script>
+
+</html>
